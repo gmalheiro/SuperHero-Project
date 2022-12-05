@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SuperHero_API.Models;
 
 namespace SuperHero_API.Data
 {
