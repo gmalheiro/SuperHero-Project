@@ -1,25 +1,30 @@
-<button (click)="initNewHero()">Create New Hero</button>
+<div class="">
+<mat-card>
+  
+      <button mat-raised-button class="btn btn-success btn-lg mb-3"  color="primary"(click)="initNewHero()">Create New Hero</button>
+  
+      <table class="table table-hover">
+        <thead>
+          <th scope="col"   >Name</th>
+          <th scope="col"  >First Name</th>
+          <th scope="col"  >Last Name</th>
+          <th scope="col"  >Place</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let hero of heroes">
+            <td scope="row" class="navbar-brand mb-0 h1  p-2" >{{ hero.name }}</td>
+            <td scope="row" class="navbar-brand mb-0 h1  p-2" >{{ hero.firstName }}</td>
+            <td scope="row" class="navbar-brand mb-0 h1  p-2" >{{ hero.lastName }}</td>
+            <td scope="row" class="navbar-brand mb-0 h1  p-2" >{{ hero.place }}</td>
+            <td><button  mat-button class="btn btn-primary btn-lg " (click)="editHero(hero)">Edit</button></td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <app-edit-hero
+        [hero]="heroToEdit"
+        (heroesUpdated)="updateHeroList($event)"
+      ></app-edit-hero>
+</mat-card>
 
-<table>
-  <thead>
-    <th>Name</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Place</th>
-    <th></th>
-  </thead>
-  <tbody>
-    <tr *ngFor="let hero of heroes">
-      <td>{{ hero.name }}</td>
-      <td>{{ hero.firstName }}</td>
-      <td>{{ hero.lastName }}</td>
-      <td>{{ hero.place }}</td>
-      <td><button (click)="editHero(hero)">Edit</button></td>
-    </tr>
-  </tbody>
-</table>
-
-<app-edit-hero
-  [hero]="heroToEdit"
-  (heroesUpdated)="updateHeroList($event)"
-></app-edit-hero>
+</div>
