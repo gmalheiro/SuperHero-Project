@@ -12,11 +12,15 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {  MatButtonModule } from '@angular/material/button';
 import {MatCommonModule} from '@angular/material/core';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { HeaderComponent } from './header/header.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    EditHeroComponent
+    EditHeroComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,8 @@ import {MatCommonModule} from '@angular/material/core';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatCommonModule
+    MatCommonModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
