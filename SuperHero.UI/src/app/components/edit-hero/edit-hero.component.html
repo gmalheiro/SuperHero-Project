@@ -1,4 +1,4 @@
-<mat-card>
+
   <div *ngIf="hero">
     <h2>{{ hero.name }}</h2>
     <div class="input-group mb-3" >
@@ -17,8 +17,7 @@
       <span class="input-group-text w-auto ">Place:</span>
       <input class="form-control" matInput [(ngModel)]="hero.place" placeholder="Place" />
     </div>
-    <button mat-button   class="btn btn-success me-3 mt-3" (click)="updateHero(hero)" *ngIf="hero.id">Save</button>
-    <button mat-button class="btn btn-danger   mt-3" (click)="deleteHero(hero)" *ngIf="hero.id">Delete</button>
-    <button  mat-button class="btn btn-success mt-3 btn-lg "  (click)="createHero(hero)" *ngIf="!hero.id">Create</button>
+    <button    class="btn btn-success me-3 mt-3" (click)="updateHero(hero)" *ngIf="hero.id">Save</button>
+    <button  class="btn btn-danger   mt-3" (click)="deleteHero(hero)" *ngIf="hero.id">Delete</button>
+    <button   class="btn btn-success mt-3 btn-lg "  (click)="createHero(hero)" *ngIf="!hero.id">Create</button>
 </div>
-</mat-card>
