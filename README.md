@@ -9,7 +9,7 @@
 ![Status do projeto | Project Status](https://img.shields.io/badge/STATUS-FINISHED-red)
 ## Autor | Author
  [@Gabriel Malheiro](https://www.linkedin.com/in/gabriel-malheiro-585091220/) 
-## Ferramentas e tecnologias utilizadas | Tool and technologies used
+## Ferramentas e tecnologias utilizadas | Tools and technologies used
 <a href="#">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width=100/>
 </a>
